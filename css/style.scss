@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "_null";
+
+.header {
+	position: fixed;
+	display: flex;
+	width: 100vw;
+	background-color: rgba(228, 48, 113, 1);
+	height: 101px;
+	transition: height 0.3s ease;
+	@media(max-width: 1004.89px){
+		height: 64px;
+	}
+
+	// .header__container
+
+	&__container {
+		display: flex;
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+		height: 100%;
+		padding: 0 41px 0 36px;
+	}
+
+	// .header__block
+
+	&__block {
+		display: flex;
+		width: 100%;
+		gap: 76px;
+		padding-bottom: 26px;
+		align-self: center;
+		margin-top: auto;
+		@media(max-width: 1200.89px){
+			gap: 30px;
+		}
+		@media(max-width: 1004.89px){
+			padding-bottom: 15.54px;
+			gap: 15px;
+		}
+	}
+
+	// .header__menu
+
+	&__menu {
+		width: 100%;
+		display: flex;
+		gap: 100px;
+		@media(max-width: 1054.89px){
+			gap: 50px;
+		}
+		@media(max-width: 1004.89px){
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	// .header__actyv
+
+	&__actyv {
+		margin-left: auto;
+		transition: opacity 0.3s ease;
+	}
+}
+.menu {
+
+	// .menu__logo
+
+	&__logo {
+		margin-top: auto;
+	}
+
+	&__logo-item{
+		@media(max-width: 1004.89px){
+			width: 102px;
+			height: 28px;
+		}
+	}
+
+	// .menu__navigation
+
+	&__navigation {
+		display: flex;
+		max-width: 643px;
+		width: 100%;
+		margin-left: auto;
+		transition: opacity 0.3s ease;
+		@media(max-width: 1004.89px){
+			display: none;
+			max-width: 1000px;
+		}
+	}
+
+	// .menu__nav
+
+	&__nav {
+		display: flex;
+		width: 100%;
+		gap: 76px;
+		flex: 1;
+		justify-content: space-between;
+		padding-top: 19.40px;
+		padding-bottom: 13px;
+		margin-left: auto;
+		@media(max-width: 1344.89px){
+			gap: 60px;
+		}
+		@media(max-width: 1280.89px){
+			gap: 40px;
+		}
+		@media(max-width: 1200.89px){
+			gap: 30px;
+		}
+		@media(max-width: 1116.89px){
+			gap: 15px;
+		}
+		@media(max-width: 1004.89px){
+			flex-direction: column;
+		}
+	}
+
+	// .menu__nav-item
+
+	&__nav-item {
+		text-align: center;
+		margin: 0 auto;
+		font-family: "Poppins";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 17.52px;
+		color: rgba(255, 255, 255, 1);
+	}
+}
+.actyv {
+	display: flex;
+	gap: 11.7px;
+	@media(max-width: 1004.89px){
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	// .actyv__container
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		gap: 11.7px;
+	}
+
+	// .actyv__search
+
+	&__search {
+		display: flex;
+	}
+
+	// .actyv__login
+
+	&__login {
+		width: 166px;
+		height: 50px;
+		top: 25px;
+		left: 1233px;
+		padding: 16px 0 16px 0;
+		border-radius: 200px;
+		background-color: rgba(255, 255, 255, 1);
+		font-family: "Poppins";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 17.52px;
+		text-align: center;
+		cursor: pointer;
+		color: rgba(228, 48, 113, 1);
+		@media(max-width: 1004.89px){
+			display: none;
+			width: 120px;
+		}
+
+	}
+}
+.search {
+
+	// .search__form
+
+	&__form {
+		display: flex;
+		gap: 6px;
+		padding-top: 5px;
+	}
+
+	// .search__input
+
+	&__input {
+		max-width: 60px;
+		background-color: rgba(228, 48, 113, 1);
+		font-family: "Poppins";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 17.52px;
+		text-align: center;
+		color: rgba(255, 255, 255, 1);
+		transition: opacity 0.3s ease;
+		@media(max-width: 1004.89px){
+			display: none;
+		}
+	}
+
+	// .search__button
+
+	&__button {
+		background-color: rgba(228, 48, 113, 1);
+	}
+}
+.menu-button {
+	display: none;
+	background-color: rgba(228, 48, 113, 1);
+	@media(max-width: 1004.89px){
+		display: flex;
+	}
+
+	// .menu-button__items
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: 4.76px;
+		padding-top: 5px;
+	}
+
+	// .menu-button__icon
+
+	&__icon {
+		background-color: rgba(228, 48, 113, 1);
+	}
+}
+.actyv__login.active {
+	display: block !important; // або block залежно від вашого макета
+	opacity: 1;
+}
+
+.search__input.active {
+	display: flex !important;
+	opacity: 1;
+}
+
+.menu__navigation.active {
+	display: flex !important; // або block, залежно від вашого макета
+	opacity: 1;
+}
