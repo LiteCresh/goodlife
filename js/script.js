@@ -39,6 +39,8 @@ const slides = document.querySelector('.slides'); // Блок слайдов
 const dots = document.querySelectorAll('.dot'); // Точки управления
 let currentIndex = 0; // Индекс текущего слайда
 
+
+
 // Функция для вычисления ширины слайда в зависимости от ширины экрана
 function getSlideWidth() {
    if (window.innerWidth <= 1004.89) {
@@ -77,6 +79,8 @@ window.addEventListener('resize', () => {
 // Инициализация
 updateSlider(currentIndex); // Запуск слайдера
 setInterval(autoSlide, 30000);
+
+
 
 const slidesbecome = document.querySelector('.slides-become'); // Блок слайдов
 const dotsbecome = document.querySelectorAll('.dot-become'); // Точки управления
