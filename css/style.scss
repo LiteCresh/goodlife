@@ -9,7 +9,7 @@
 	background-color: rgba(228, 48, 113, 1);
 	height: 101px;
 	transition: height 0.3s ease;
-	z-index: 1;
+	z-index: 999;
 	@media(max-width: 1004.89px){
 		height: 64px;
 	}
@@ -686,4 +686,153 @@
 	background-color: rgba(228, 48, 113, 1);
 	width: 17px;
    height: 17px;
+}
+
+.premium {
+	width: 100vw;
+
+	// .meet__container
+
+	&__container {
+		width: 100%;
+		max-width: 1440px;
+		padding: 224px 79px 108px 155px;
+		margin: 0 auto;
+		@media(max-width: 1004.89px){
+			padding: 35px 35px 23px 16px;
+		}
+	}
+
+	// .meet__block
+
+	&__block {
+		position: relative;
+		display: flex;
+		width: 100%;
+		max-width: 1206px;
+		min-height: 435px;
+		margin: 0 auto;
+		@media(max-width: 1004.89px){
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+}
+.block-premium {
+	position: relative;
+
+	// .block-meet__images
+
+	&__images {
+		position: absolute;
+		right: 0px;
+		min-height: 435px;
+		min-width: 480px;
+		@media(max-width: 1004.89px){
+			position: relative;
+			min-height: 198px;
+			margin: 0 auto;
+			width: 322px;
+		}
+	}
+
+	// .block-meet__img
+
+	&__img1 {
+		position: absolute;
+		width: 444px;
+		height: 296px;
+		right: 128px;
+		z-index: 1;
+		@media(max-width: 1004.89px){
+			right: 0;
+			position: relative;
+			width: 202px;
+			height: 135px;
+		}
+	}
+
+	&__img2 {
+		position: absolute;
+		top: 154px;
+		width: 422px;
+		height: 281px;
+		right: 0;
+		z-index: 0;
+		@media(max-width: 1004.89px){
+			position: relative;
+			width: 191px;
+			height: 128px;
+			top: 70px;
+			left: -116px;
+		}
+	}
+
+	// .block-meet__msg
+
+	&__msg {
+	}
+}
+.msg-premium {
+	max-width: 489px;
+	align-self: center;
+	margin-right: 620px;
+	@media(max-width: 1004.89px){
+		margin: 0 auto;
+	}
+
+	// .msg-meet__container
+
+	&__container {
+	}
+
+	// .msg-meet__title
+
+	&__title {
+		font-family: "Poppins";
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 60px;
+		color: rgba(228, 48, 113, 1);
+		padding-bottom: 6px;
+		@media(max-width: 1004.89px){
+			line-height: 48px;
+		}
+	}
+
+	// .msg-meet__text
+
+	&__text {
+		font-family: "Poppins";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 37px;
+		color: rgba(66, 66, 66, 1);
+		padding-bottom: 30px;
+		@media(max-width: 1004.89px){
+			line-height: 32px;
+		}
+	}
+
+	// .msg-meet__button
+
+	&__button {
+		width: 100%;
+		max-width: 237px;
+		height: 68px;
+		font-family: "Poppins";
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 37px;
+		text-align: center;
+		border-radius: 38.5px;
+		border: 2px solid rgba(228, 48, 113, 1);
+		color: rgba(228, 48, 113, 1);
+		background-color: rgba(255, 255, 255, 1);
+		cursor: pointer;
+		&:hover{
+			border: 2px solid rgba(190, 40, 94, 1);
+			color: rgba(190, 40, 94, 1);
+		}
+	}
 }
