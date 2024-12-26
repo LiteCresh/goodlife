@@ -77,3 +77,46 @@ window.addEventListener('resize', () => {
 // Инициализация
 updateSlider(currentIndex); // Запуск слайдера
 setInterval(autoSlide, 30000);
+
+const slidesbecome = document.querySelector('.slides-become'); // Блок слайдов
+const dotsbecome = document.querySelectorAll('.dot-become'); // Точки управления
+let becomecurrentIndex = 0; // Индекс текущего слайда
+
+// Функция для вычисления ширины слайда в зависимости от ширины экрана
+function getSlideWidthbecome() {
+   if (window.innerWidth <= 1004.89) {
+      return 1004.89; // Сдвиг на 1004.89px при ширине экрана меньше 1004.89px
+   }
+   return 1440; // Сдвиг на 1440px по умолчанию
+}
+
+// Обновление слайдера
+function updateSliderbecome(indexbecome) {
+   const becomeslideWidth = getSlideWidthbecome(); // Получаем ширину слайда в зависимости от ширины экрана
+   slidesbecome.style.transform = `translateX(${-indexbecome * becomeslideWidth}px)`; // Сдвиг слайдов
+   dotsbecome.forEach(dotbecome => dotbecome.classList.remove('active')); // Убираем активный класс у всех точек
+   dotsbecome[indexbecome].classList.add('active'); // Добавляем активный класс к текущей точке
+}
+
+// Автоматическое переключение слайдов
+function autoSlidebecome() {
+   becomecurrentIndex = (becomecurrentIndex + 1) % dotsbecome.length; // Зацикливание слайдов
+   updateSliderbecome(becomecurrentIndex);
+}
+
+// Обработчик кликов по точкам
+dotsbecome.forEach((dotbecome, indexbecome) => {
+   dotbecome.addEventListener('click', () => {
+      becomecurrentIndex = indexbecome; // Устанавливаем текущий индекс
+      updateSliderbecome(becomecurrentIndex); // Обновляем слайдер
+   });
+});
+
+// Обновление слайдера при изменении размера окна
+window.addEventListener('resize', () => {
+   updateSliderbecome(currentIndex); // Пересчитываем положение слайда при изменении размера окна
+});
+
+// Инициализация
+updateSliderbecome(currentIndex); // Запуск слайдера
+setInterval(autoSlidebecome, 30000);
