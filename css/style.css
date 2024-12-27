@@ -857,6 +857,7 @@ body {
 
 .stories {
   width: 100vw;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(244, 227, 233) 100%);
 }
 .stories__container {
   width: 100%;
@@ -1100,5 +1101,194 @@ body {
 @media (max-width: 1004.89px) {
   .item__op {
     font-size: 9.75px;
+  }
+}
+
+.app {
+  width: 100vw;
+  background: linear-gradient(180deg, rgb(244, 227, 233) 0%, rgb(237, 237, 237) 100%);
+}
+.app__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  background-color: rgb(228, 48, 113);
+}
+.app__block {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 45px;
+}
+@media (max-width: 1004.89px) {
+  .app__block {
+    flex-direction: column;
+    gap: 80px;
+    padding: 15px 0 0 15px;
+  }
+}
+.app__massage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto auto;
+  max-width: 489px;
+}
+@media (max-width: 1004.89px) {
+  .app__massage {
+    margin: 0 auto;
+  }
+}
+.app__image {
+  width: 100%;
+  max-width: 634px;
+  display: flex;
+}
+@media (max-width: 1004.89px) {
+  .app__image {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+.app__img1 {
+  margin-top: -50px;
+}
+@media (max-width: 1004.89px) {
+  .app__img1 {
+    width: 200px;
+  }
+}
+.app__img2 {
+  margin-top: auto;
+}
+@media (max-width: 1004.89px) {
+  .app__img2 {
+    width: 200px;
+  }
+}
+
+.massage-app {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.massage-app__msg {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.massage-app__title {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1004.89px) {
+  .massage-app__title {
+    line-height: 48px;
+  }
+}
+.massage-app__text {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1004.89px) {
+  .massage-app__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+  }
+}
+.links__text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+.links__item {
+  background-color: rgb(228, 48, 113);
+  cursor: pointer;
+}
+@media (max-width: 1004.89px) {
+  .links__img {
+    width: 137.39px;
+    height: 40.71px;
+  }
+}
+
+.social {
+  width: 100vw;
+  background-color: rgb(237, 237, 237);
+}
+.social__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 71px 0;
+}
+.social__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 18px;
+}
+.social__title {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: rgb(228, 48, 113);
+}
+.social__links {
+  display: flex;
+  margin: 0 auto;
+}
+
+.links-social__items {
+  display: flex;
+  gap: 93px;
+}
+@media (max-width: 1004.89px) {
+  .links-social__items {
+    gap: 22.5px;
+  }
+}
+.links-social__item {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 1004.89px) {
+  .links-social__item {
+    width: 75px;
+    height: 75px;
+  }
+}
+.links-social__img {
+  margin: auto;
+}
+@media (max-width: 1004.89px) {
+  .links-social__img {
+    width: 20.45px;
+    height: 20.45px;
   }
 }/*# sourceMappingURL=style.css.map */

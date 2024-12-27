@@ -840,13 +840,16 @@
 
 .stories {
 	width: 100vw;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(244, 227, 233, 1) 100%);
 
 	// .stories__container
 
 	&__container {
 		width: 100%;
 		max-width: 1440px;
-		margin: 0 auto
+		margin: 0 auto;
+
+
 	}
 
 	// .stories__block
@@ -1105,3 +1108,239 @@
 		}
 	}
 }
+
+.app {
+	width: 100vw;
+	background: linear-gradient(180deg, rgba(244, 227, 233, 1) 0%, rgba(237, 237, 237, 1) 100%);
+	// .app__container
+
+	&__container {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1440px;
+		background-color: rgba(228, 48, 113, 1);
+	}
+
+	// .app__block
+
+	&__block {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1440px;
+		padding: 0 45px;
+		@media(max-width: 1004.89px){
+			flex-direction: column;
+			gap: 80px;
+			padding: 15px 0 0 15px;
+		}
+	}
+
+	// .app__massage
+
+	&__massage {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: auto 0 auto auto;
+		max-width: 489px;
+		@media(max-width: 1004.89px){
+			margin: 0 auto;
+		}
+	}
+
+	// .app__image
+
+	&__image {
+		width: 100%;
+		max-width: 634px;
+		display: flex;
+		@media(max-width: 1004.89px){
+			margin: 0 auto;
+			max-width: 400px;
+		}
+	}
+
+	// .app__img
+
+	&__img1 {
+		margin-top: -50px;
+		@media(max-width: 1004.89px){
+			width: 200px;
+		}
+	}
+
+	&__img2 {
+		margin-top: auto;
+		@media(max-width: 1004.89px){
+			width: 200px;
+		}
+	}
+}
+.massage-app {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	// .massage-app__msg
+
+	&__msg {
+		padding-top: 36px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	// .massage-app__title
+
+	&__title {
+		font-family: "Poppins";
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 60px;
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		@media(max-width: 1004.89px){
+			line-height: 48px;
+		}
+	}
+
+	// .massage-app__text
+
+	&__text {
+		font-family: "Poppins";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 37px;
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		@media(max-width: 1004.89px){
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 33px;
+		}
+	}
+
+	// .massage-app__links
+
+	&__links {
+	}
+}
+.links {
+
+	// .links__text
+
+	&__text {
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: left;
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	// .links__items
+
+	&__items {
+	}
+
+	// .links__item
+
+	&__item {
+		background-color: rgba(228, 48, 113, 1);
+		cursor: pointer;
+	}
+
+	// .links__img
+
+	&__img {
+		@media(max-width: 1004.89px){
+			width: 137.39px;
+			height: 40.71px;
+		}
+	}
+}
+
+.social {
+	width: 100vw;
+	background-color: rgba(237, 237, 237, 1);
+
+	// .social__container
+
+	&__container {
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 60px 0 71px 0;
+	}
+
+	// .social__block
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+		gap: 18px;
+	}
+
+	// .social__title
+
+	&__title {
+		display: flex;
+		margin: 0 auto;
+		font-family: "Poppins";
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 60px;
+		text-align: center;
+		color: rgba(228, 48, 113, 1);
+	}
+
+	// .social__links
+
+	&__links {
+		display: flex;
+		margin: 0 auto;
+	}
+}
+.links-social {
+
+	// .links-social__items
+
+	&__items {
+		display: flex;
+		gap: 93px;
+		@media(max-width:1004.89px){
+			gap: 22.5px;
+		}
+	}
+
+	// .links-social__item
+
+	&__item {
+		display: flex;
+		background-color: rgba(255, 255, 255, 1);
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		cursor: pointer;
+		@media(max-width: 1004.89px){
+			width: 75px;
+			height: 75px;
+		}
+	}
+
+	// .links-social__img
+
+	&__img {
+		margin: auto;
+		@media(max-width: 1004.89px){
+			width: 20.45px;
+			height: 20.45px;
+		}
+	}
+}
+
